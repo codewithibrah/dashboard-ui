@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+
+    <div class="app-container">
+
+        <div class="admin-wrapper" id="adminWrapper">
+
+            <div class="admin-sidebar">
+
+                <div class="admin-sidebar__header">
+                    <div class="dashboard-user__profile">
+                        <p class="profile-avatar">IY</p>
+
+                        <div class="dropdown">
+                            <a class="dropdown-toggle link" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Ibrahim Yakubu
+                            </a>
+                            <ul class="dropdown-menu rounded-" aria-labelledby="profileDropdown">
+                                <li><a href="#" class="dropdown-item link">Profile</a></li>
+                                <li><a class="dropdown-item link">Logout</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div class="sidebar-profile__title">
+                            <i class="bi bi-shield-fill-check icon"></i>
+                            <small class="title">Ghana music awards</small>
+                        </div>
+                    </div>
+
+                    <i id="sidebarCloseBtn" class="bi bi-x-lg close-sidebar__btn"></i>
+                </div>
+
+                <div class="sidebar-menu__container">
+                    <a href="#" class="link sidebar-link__wrapper active">
+                        <i class="bi bi-graph-up sidebar-link__icon"></i>
+                        <span>Dashboard</span>
+                    </a>
+    
+                    <a href="#" class="link sidebar-link__wrapper">
+                        <i class="bi bi-person sidebar-link__icon"></i>
+                        <span>Candidates</span>
+                    </a>
+
+                    <div class="dropdown">
+                        <a href="#" class="link sidebar-link__wrapper dropdown-toggle link" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-phone-fill sidebar-link__icon"></i>
+                            <span>Users</span>
+                        </a>
+
+                        <ul class="dropdown-menu rounded-0" aria-labelledby="profileDropdown">
+                            <li><a href="#" class="dropdown-item link">Add User</a></li>
+                            <li><a href="#" class="dropdown-item link">view users</a></li>
+                            <li><a class="dropdown-item link">Logout</a></li>
+                        </ul>
+                    </div>
+    
+                    <a href="#" class="link sidebar-link__wrapper">
+                        <i class="bi bi-globe-europe-africa sidebar-link__icon"></i>
+                        <span>Awards</span>
+                    </a>
+    
+                    <a href="#" class="link sidebar-link__wrapper">
+                        <i class="bi bi-phone-fill sidebar-link__icon"></i>
+                        <span>Contact</span>
+                    </a>
+
+
+
+
+                </div>
+
+
+
+
+                <div class="sidebar-brand__name">
+                    <img src="./assets/img/logo.png" alt="logo" class="logo"/>
+                    <span class="title">Company Name</span>
+                </div>
+               
+            </div>
+
+
+
+
+
+            <div class="admin-main__page">
+                
+                <div class="admin-main__pageContent">
+
+                    <div class="admin-pageContent__mobile-navbar">
+                        <p class="profile-avatar">IY</p>
+                        
+                        <div class="mobile-navbar__iconWrapper">
+                            <i class="bi bi-bell-fill dashboard-icon"></i>
+                            <i class="bi bi-list dashboard-icon menu-icon" id="menuIcon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="admin-pageContent-header">
+                        <div class="admin-header">
+                            <p class="title-l">Dashboard</p>
+                            <p class="desc">View analytics and stats</p>
+                        </div>
+
+                        <i class="bi bi-bell-fill dashboard-icon header-notification-icon"></i>
+                    </div>
+
+
+                    <div class="">
+                    <!-- main page content goes here -->
+
+                        <div class="content">
+                            <div class="admin-card__wrapper">
+                                <div class="card-item">
+                                    <div class="card-item__header">
+                                        <i class="bi bi-person icon"></i>
+                                        <span class="title">Users</span>
+                                    </div>
+                                    <div class="card-item__footer">
+                                        <p class="title">8</p>
+                                    </div>
+                                </div>
+
+                                <div class="card-item">
+                                    <div class="card-item__header">
+                                        <i class="bi bi-usb-c icon"></i>
+                                        <span class="title">Category</span>
+                                    </div>
+                                    <div class="card-item__footer">
+                                        <p class="title">5</p>
+                                    </div>
+                                </div>
+
+                                <div class="card-item">
+                                    <div class="card-item__header">
+                                        <i class="bi bi-shop icon"></i>
+                                        <span class="title">Products</span>
+                                    </div>
+                                    <div class="card-item__footer">
+                                        <p class="title">13</p>
+                                    </div>
+                                </div>
+
+                                <div class="card-item">
+                                    <div class="card-item__header">
+                                        <i class="bi bi-globe icon"></i>
+                                        <span class="title">Awards</span>
+                                    </div>
+                                    <div class="card-item__footer">
+                                        <p class="title">0</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <div class="card">
+                                <p class="card-header">Register</p>
+                                <div class="card-body">
+                                    <form action="#">
+                                        <div class="row mb-4">
+                                            <div class="col-md-4 col-sm-6 col-12">
+                                                <label for="#" class="mb-1">First Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+    
+                                            <div class="col-md-4 col-sm-6 col-12">
+                                                <label for="#" class="mb-1">Last Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+    
+                                            <div class="col-md-4 col-sm-6 col-12">
+                                                <label for="#" class="mb-1">Username</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+    
+                                        <div class="row mb-4">
+                                            <div class="col-md-4 col-sm-6 col-12">
+                                                <label for="#" class="mb-1">First Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+    
+                                            <div class="col-md-4 col-sm-6 col-12">
+                                                <label for="#" class="mb-1">Last Name</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+    
+                                            <div class="col-md-4 col-sm-6 col-12">
+                                                <label for="#" class="mb-1">Username</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+    
+    
+                                        <div class="mb-4">
+                                            <button class="btn button">
+                                                <i class="bi bi-save"></i>
+                                                Create
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="content">
+                            <div class="card">
+                                <div class="card-header">
+                                    available users
+                                </div>
+    
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+    
+                            </div>
+    
+                        </div>
+
+    
+                    <!-- page content ends here -->
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="shadow" id="shadow"></div>
+
+
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/sweetalert2.all.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
